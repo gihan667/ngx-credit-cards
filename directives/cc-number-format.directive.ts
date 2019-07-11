@@ -20,8 +20,8 @@ export class CCNumberFormatDirective {
 		this.cardType = "";
 
     	// call lib functions
-        Payment.fns.formatCardNumber(element);
-        Payment.fns.restrictNumeric(element);
+        Payment.formatCardNumber(element);
+        Payment.restrictNumeric(element);
 	}
 
 	@HostListener('keypress', ['$event']) onKeypress(e) {
